@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f8f6">
+  <title>nutricion IA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="aplicacion">
+
+    <!-- zona de chat -->
+    <section id="zona-chat" aria-label="zona de chat">
+
+      <header class="encabezado">
+        <div class="identidad">
+          <div class="logo">n</div>
+          <div>
+            <h1>nutricion IA</h1>
+            <span>Tu asistente de nutrición</span>
+          </div>
+        </div>
+
+        <div class="estado">
+          <span class="indicador"></span>
+          En línea
+        </div>
+      </header>
+
+      <div
+        class="mensajes"
+        id="mensajes"
+        role="log"
+        aria-live="polite"
+        aria-label="Conversación"
+      >
+        <div class="mensaje agente">
+          <div class="avatar">n</div>
+          <div class="contenido-mensaje">
+            <span class="nombre">nutricion IA</span>
+            <div class="burbuja">
+              ¡Hola! Soy nutricion IA. 🥑
+
+              Estoy acá para ayudarte a mejorar tu alimentación.
+
+              Podés preguntarme sobre nutrición, recetas saludables,
+              alimentos, hábitos alimenticios y mucho más.
+
+              ¿Qué te gustaría saber hoy?
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- zona de escritura -->
+    <section id="zona-escritura" aria-label="zona de escritura">
+
+      <form id="formulario-chat" class="formulario">
+
+        <div class="campo-mensaje">
+          <textarea
+            id="entrada-mensaje"
+            placeholder="Escribí tu consulta sobre nutrición..."
+            maxlength="500"
+            rows="1"
+            aria-label="Escribí tu mensaje"
+            required
+          ></textarea>
+
+          <button
+            type="submit"
+            id="boton-enviar"
+            aria-label="Enviar mensaje"
+          >
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 19V5M5 12l7-7 7 7"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="pie-escritura">
+          <span>Hasta 500 caracteres</span>
+          <span>nutricion IA puede cometer errores.</span>
+        </div>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
